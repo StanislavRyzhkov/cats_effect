@@ -1,13 +1,13 @@
 package company.ryzhkov.cats
 
-import cats.Monad
-import cats.implicits._
-import scala.concurrent.Future
-import scala.concurrent.ExecutionContext.Implicits.global
-import cats.data.Kleisli
 import cats.data.EitherT
-import scala.util.Success
+import cats.data.Kleisli
+import cats.implicits._
+import cats.Monad
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
 import scala.util.Failure
+import scala.util.Success
 
 object App3 extends App {
 
