@@ -18,7 +18,7 @@ object App3 extends App {
 
   def fun2(int: Int): Future[Either[String, String]] =
     Future {
-      if (int + 1 == 10) Right("Good") else Left("Bad")
+      if (int + 1 == 10) "Good".asRight else "Bad".asLeft
     }
 
   def fun3(i: Int) =

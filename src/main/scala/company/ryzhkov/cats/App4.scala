@@ -1,9 +1,9 @@
 package company.ryzhkov.cats
 
-import cats.Monad
-import cats.implicits._
 import cats.data.Kleisli
 import cats.effect.IO
+import cats.implicits._
+import cats.Monad
 
 object App4 extends App {
   val x = Monad[Option].map(3.some)(_ + 1)
@@ -21,3 +21,4 @@ object App4 extends App {
     case Left(value)  => println(value.getMessage)
   }
 }
+
