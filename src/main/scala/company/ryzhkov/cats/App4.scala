@@ -21,4 +21,3 @@ object App4 extends App {
     case Left(value)  => println(value.getMessage)
   }
 }
-

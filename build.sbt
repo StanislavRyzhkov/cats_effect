@@ -14,7 +14,8 @@ lazy val common = (project in file("."))
     ),
     scalacOptions ++= Seq(
       "-feature",
-      "-language:implicitConversions"
+      "-language:implicitConversions",
+      "-language:higherKinds"
     ),
     mainClass in (Compile, run) := Some("company.ryzhkov.cats.Application"),
     mainClass in (assembly) := Some("company.ryzhkov.cats.Application"),
