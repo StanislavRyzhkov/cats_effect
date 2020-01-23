@@ -9,15 +9,8 @@ import java.net.URL
 import java.io.PrintWriter
 
 object HttpClient {
-  val query =
-    // "https://www.quandl.com/api/v3/datatables/SHARADAR/SEP.csv?ticker=AAPL&qopts.columns=date,close,dividends&date.gte=2020-01-01&api_key=sMCfXgsrnJevqgA-G12G"
-    // "https://www.quandl.com/api/v3/datatables/SHARADAR/SEP.csv?ticker=FAST&date.gte=2019-01-01&api_key=sMCfXgsrnJevqgA-G12G"
-    // "https://www.quandl.com/api/v3/datatables/SHARADAR/SEP.csv?date=2020-01-22&api_key=sMCfXgsrnJevqgA-G12G"
-    "https://www.quandl.com/api/v3/datatables/SHARADAR/TICKERS.csv?table=SF1&ticker=ZNGA&qopts.columns=ticker,name&api_key=sMCfXgsrnJevqgA-G12G"
-  // "https://www.quandl.com/api/v3/datatables/SHARADAR/TICKERS.csv?table=SF1&qopts.columns=ticker,name&api_key=sMCfXgsrnJevqgA-G12G"
-
-  // https://www.quandl.com/api/v3/datatables/SHARADAR/TICKERS.csv?qopts.export=true&qopts.columns=ticker,name&table=SF1&api_key=sMCfXgsrnJevqgA-G12G
-
+  val query = "asd"
+   
   def main(args: Array[String]) = {
     val io  = proccess()
     val io2 = proccess2("1.csv")
