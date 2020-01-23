@@ -9,12 +9,12 @@ import cats.implicits._
 
 trait Cat[->[_, _]] {
   def id[A]: A -> A
-  def compose[A, B, C](f: B -> C, g: A -> B): A -> C  
+  def compose[A, B, C](f: B -> C, g: A -> B): A -> C
 }
 
 object StateApp extends App {
 
-  val nextPrice: State[Int, Int] = 
+  val nextPrice: State[Int, Int] =
     State(price => (price + 1, price))
 
   val initInt = 1
@@ -23,10 +23,10 @@ object StateApp extends App {
     a <- nextPrice
     b <- nextPrice
     c <- nextPrice
-  } yield c 
+  } yield c
 
   val (m, n) = xyz.run(initInt).value
 
   println(m, n)
-  
+
 }
